@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ConcinnitY</title>
+    <title>Concinnity - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
@@ -27,110 +23,98 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
     <div id="header"></div>
 
-    <section class="hero-section">
-      <div class="hero d-flex justify-content-center align-items-center">
-        <div class="hero-info d-flex flex-column text-center gap-4">
-          <h1>
-            Is Your Website <br />
-            <span class="text-orange">Holding</span> You Back?
-          </h1>
-          <p>
-            Discover what’s slowing you down with our free AI-powered audit.<br />
-            SEO, performance, carbon load, and more — in under 60 seconds.
-          </p>
-          <button class="btn-large fw-medium">Run My Free Audit</button>
-          <p class="text-orange fs-6">No sign-up. No jargon. Just insights.</p>
+    <section class="hero-section py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="col-lg-8 d-flex flex-column align-items-center text-center gap-3 gap-lg-4 mb-4 mb-lg-0"
+          >
+            <h1>
+              Is Your Website <br />
+              <span class="text-orange">Holding</span> You Back?
+            </h1>
+            <p>
+              Discover what’s slowing you down with our free AI-powered
+              audit.<br />
+              SEO, performance, carbon load, and more — in under 60 seconds.
+            </p>
+            <button class="btn btn-large">Run My Free Audit</button>
+            <p class="text-orange p-smallest">
+              No sign-up. No jargon. Just insights.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="hero-stat-image-temp mt-5">
-        <div class="d-flex justify-content-center align-items-center">
-          <img
-            src="images/hero_stats.png"
-            alt="Audit Dashboard"
-            class="img-fluid"
-          />
+        <div class="row justify-content-center align-items-center pt-5">
+          <div class="col-lg-10 d-flex justify-content-center">
+            <img
+              src="assets/images/hero_stats.png"
+              alt="Audit Dashboard"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="services-section mt-6">
+    <section class="services-section py-6">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mt-5">
-            <div class="position-relative">
-              <img
-                src="images/unsplash_7uoMmzPd2JA.png"
-                alt="Team collaboration"
-                class="img-fluid rounded w-100"
-              />
-
-              <!-- Overlapping Card -->
-              <div
-                class="position-absolute start-0 ms-4 bg-white shadow rounded-3 px-0 py-3 d-flex flex-column justify-content-center align-items-center"
-                style="
-                  width: clamp(110px, 18vw, 150px);
-                  height: 160px;
-                  bottom: -35px;
-                "
-              >
-                <!-- Bigger Icon/Image -->
-                <img
-                  src="images/card1.png"
-                  alt="Progress Icon"
-                  class="img-fluid mb-3"
-                  style="width: 75px; height: 75px"
-                />
-
-                <!-- Main Stat -->
-                <h5 class="fw-bold mb-2">17k+</h5>
-
-                <!-- Smaller Paragraph Text -->
-                <p
-                  class="text-muted mb-0 text-center"
-                  style="font-size: 0.7rem"
-                >
-                  1000k+ Contributions <br />
-                  in the last year!
-                </p>
-              </div>
+        <div class="row mb-3">
+          <div class="col-md-6 offset-md-6">
+            <div class="">
+              <button class="btn btn-tertiary">What we do</button>
             </div>
           </div>
-          <div class="col-lg-6">
-            <button class="btn btn-tertiary">What We Do</button>
-            <h2 class="mb-2">
-              Marketing Meets
-              <span class="text-orange fw-bolder">Intelligence.</span>
-              Tech That Performs.
-            </h2>
-            <p class="hard-gray">
-              From growth-driven SEO to AI transformation — we help
-              digital-first businesses scale smarter.
-            </p>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div>
+              <img
+                src="assets/images/index/man_sitting_down.png"
+                class="img-fluid w-100"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div>
+              <h2>
+                Marketing Meets <br /><span class="text-orange"
+                  >Intelligence</span
+                >. Tech <br />That Performs.
+              </h2>
+              <p>
+                From growth-driven SEO to AI transformation — we help
+                digital-first businesses scale smarter.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- Service Cards -->
-        <div class="row g-4 mt-5">
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+
+        <div class="row pt-5">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing1.png"
+                  src="assets/images/index/marketing/marketing1.png"
                   alt="E-commerce SEO"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">E-commerce & Shopify SEO</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">E-commerce & Shopify SEO</h3>
+                  <p class="mb-0">
                     Drive traffic that converts with custom, data-led SEO
                     strategies.
                   </p>
@@ -138,19 +122,19 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing2.png"
+                  src="assets/images/index/marketing/marketing2.png"
                   alt="Green SEO"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">Green SEO</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">Green SEO</h3>
+                  <p class="mb-0">
                     Reduce your website's carbon footprint while ranking higher
                     on Google.
                   </p>
@@ -158,19 +142,19 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing3.png"
+                  src="assets/images/index/marketing/marketing3.png"
                   alt="Technical SEO"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">Technical SEO Audits</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">Technical SEO Audits</h3>
+                  <p class="mb-0">
                     Dig deep into performance, crawlability, and code-level
                     fixes.
                   </p>
@@ -178,19 +162,19 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing4.png"
+                  src="assets/images/index/marketing/marketing4.png"
                   alt="AI Transformation"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">AI Transformation</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">AI Transformation</h3>
+                  <p class="mb-0">
                     Automate workflows, chatbots, and data intelligence to
                     unlock scale.
                   </p>
@@ -198,38 +182,38 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing5.png"
-                  alt="Big Data & AI"
+                  src="assets/images/index/marketing/marketing5.png"
+                  alt="Big Data and AI Implementation"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">Big Data & AI Implementation</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">Big Data and AI Implementation</h3>
+                  <p class="mb-0">
                     Custom solutions to leverage data, from insights to action.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="service-card p-4 h-100">
+          <div class="col-lg-6 mb-4">
+            <div class="p-4 h-100 border border-secondary-subtle rounded-3">
               <div class="d-flex align-items-center">
                 <img
-                  src="images/marketing/marketing6.png"
+                  src="assets/images/index/marketing/marketing6.png"
                   alt="Digital Strategy"
                   width="60"
                   height="60"
                   class="me-3"
                 />
                 <div>
-                  <h5 class="fw-medium mb-2">Digital Strategy</h5>
-                  <p class="hard-gray mb-0">
+                  <h3 class="mb-2">Digital Strategy</h3>
+                  <p class="mb-0">
                     End-to-end roadmap tailored for your growth stage and tech
                     stack.
                   </p>
@@ -241,29 +225,28 @@
       </div>
     </section>
 
-    <section class="why-choose-us mt-6">
+    <section class="why-choose-us pb-7 pt-7">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="text-center mb-5">
-              <span class="btn btn-tertiary mb-2"> Why Concinnity </span>
-              <h2>Sustainable, Scalable, Strategic.</h2>
+              <span class="btn btn-tertiary">Why Concinnity</span>
+              <h2 class="pt-2">Sustainable, Scalable, Strategic.</h2>
             </div>
 
-            <div class="row">
+            <div class="row g-4">
               <div class="col-lg-4">
                 <div
-                  class="d-flex flex-column align-items-center h-100 border border-gray-300 rounded-3 p-4"
+                  class="d-flex flex-column align-items-center h-100 border border-secondary rounded-3 p-4"
                 >
                   <img
-                    src="/images/choose-us/choose1.png"
+                    src="assets/images/index/choose-us/choose1.png"
                     alt="Sustainable"
-                    width="auto"
                     height="40"
                     class="mb-3"
                   />
-                  <h5 class="fw-medium mb-3">Sustainably Smart</h5>
-                  <p class="hard-gray">
+                  <h3 class="mb-3">Sustainably Smart</h3>
+                  <p class="text-muted text-center">
                     We believe in digital that performs — and respects the
                     planet.
                   </p>
@@ -271,34 +254,32 @@
               </div>
               <div class="col-lg-4">
                 <div
-                  class="d-flex flex-column align-items-center h-100 border border-orange rounded-3 p-4"
+                  class="d-flex flex-column align-items-center h-100 border border-warning rounded-3 p-4"
                 >
                   <img
-                    src="/images/choose-us/choose2.png"
+                    src="assets/images/index/choose-us/choose2.png"
                     alt="Scalable"
-                    width="auto"
                     height="40"
                     class="mb-3"
                   />
-                  <h5 class="fw-medium mb-3">Built to Scale</h5>
-                  <p class="hard-gray">
+                  <h3 class="mb-3">Built to Scale</h3>
+                  <p class="text-muted text-center">
                     From startups to enterprises, our solutions grow with you.
                   </p>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div
-                  class="d-flex flex-column align-items-center h-100 border border-gray-300 rounded-3 p-4"
+                  class="d-flex flex-column align-items-center h-100 border border-secondary rounded-3 p-4"
                 >
                   <img
-                    src="/images/choose-us/choose3.png"
+                    src="assets/images/index/choose-us/choose3.png"
                     alt="Strategic"
-                    width="auto"
                     height="40"
                     class="mb-3"
                   />
-                  <h5 class="fw-medium mb-3">Strategically Driven</h5>
-                  <p class="hard-gray">
+                  <h3 class="mb-3">Strategically Driven</h3>
+                  <p class="text-muted text-center">
                     Data-led strategies tailored to your unique goals and needs.
                   </p>
                 </div>
@@ -309,28 +290,30 @@
       </div>
     </section>
 
-    <!-- Success Metrics Section -->
-    <section class="success-metrics-section mt-6 bg-orange">
+    <section class="success-metrics-section mt-6 mb-6 bg-orange py-6">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="text-center py-5 text-white rounded-3">
+            <div class="text-center text-white rounded-3">
               <h2 class="mb-5">Success You Can Measure</h2>
 
               <div class="row g-4 text-center">
                 <!-- First Stat -->
                 <div class="col-lg-4">
-                  <div class="mb-4">
-                    <h2
-                      class="fw-bold mb-3"
-                      style="font-size: 3rem"
+                  <div>
+                    <span
+                      class="success-numbers d-inline-block mb-4"
                       id="stat-1"
                     >
                       +0%
-                    </h2>
-                    <div class="fw-bold mb-1 text-dark">Organic Sales</div>
-                    <div class="fw-bold mb-3 text-dark">in 90 Days</div>
-                    <p class="mb-0" style="opacity: 0.8">
+                    </span>
+                    <div class="fw-bold mb-1 text-dark h3-thick">
+                      Organic Sales
+                    </div>
+                    <div class="fw-bold mb-3 text-dark h3-thick">
+                      in 90 Days
+                    </div>
+                    <p class="mb-0 p-thick" style="opacity: 0.8">
                       Shopify SEO + Green <br />Optimization for [Client Name]
                     </p>
                   </div>
@@ -338,17 +321,20 @@
 
                 <!-- Second Stat -->
                 <div class="col-lg-4">
-                  <div class="mb-4">
-                    <h2
-                      class="fw-bold mb-3"
-                      style="font-size: 3rem"
+                  <div>
+                    <span
+                      class="success-numbers d-inline-block mb-4"
                       id="stat-2"
                     >
                       0+
-                    </h2>
-                    <div class="fw-bold mb-1 text-dark">Hours saved with</div>
-                    <div class="fw-bold mb-3 text-dark">AI Chatbot</div>
-                    <p class="mb-0" style="opacity: 0.8">
+                    </span>
+                    <div class="fw-bold mb-1 text-dark h3-thick">
+                      Hours saved with
+                    </div>
+                    <div class="fw-bold mb-3 text-dark h3-thick">
+                      AI Chatbot
+                    </div>
+                    <p class="mb-0 p-thick" style="opacity: 0.8">
                       AI implementation for <br />[SaaS Startup]
                     </p>
                   </div>
@@ -356,19 +342,20 @@
 
                 <!-- Third Stat -->
                 <div class="col-lg-4">
-                  <div class="mb-4">
-                    <h2
-                      class="fw-bold mb-3"
-                      style="font-size: 3rem"
+                  <div>
+                    <span
+                      class="success-numbers d-inline-block mb-4"
                       id="stat-3"
                     >
                       0%
-                    </h2>
-                    <div class="fw-bold mb-1 text-dark">
+                    </span>
+                    <div class="fw-bold mb-1 text-dark h3-thick">
                       Reduction in Website
                     </div>
-                    <div class="fw-bold mb-3 text-dark">Carbon Load</div>
-                    <p class="mb-0" style="opacity: 0.8">
+                    <div class="fw-bold mb-3 text-dark h3-thick">
+                      Carbon Load
+                    </div>
+                    <p class="mb-0 p-thick" style="opacity: 0.8">
                       Green SEO and performance <br />revamp for [NGO / B2B
                       Firm]
                     </p>
@@ -381,8 +368,7 @@
       </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section mt-6">
+    <section class="process-section pb-6 pt-8">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -390,80 +376,107 @@
               <h2>Let's Get You Growing</h2>
             </div>
 
-            <div class="row g-0">
-              <div class="col-lg-3 col-md-6">
-                <div class="process-step h-100 px-0">
+            <div class="row g-0 align-items-center text-center">
+              <!-- Step 1 -->
+              <div class="col-lg-3 col-md-6 position-relative">
+                <div class="text-center position-relative py-4 px-3 h-100">
                   <div class="process-number text-start">1</div>
-                  <div>
-                    <img
-                      src="/images/process/process1.png"
-                      alt="Audit"
-                      width="95"
-                      height="95"
-                      class="mb-3 d-inline-block"
-                    />
-                  </div>
-
-                  <h5 class="fw-medium mb-3">Run Free <br />Audit</h5>
-                  <p class="hard-gray">
-                    Instant SEO, performance <br />& sustainability insights.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="process-step h-100">
-                  <div class="process-number">2</div>
                   <img
-                    src="/images/process/process2.png"
-                    alt="Strategy Call"
-                    width="95"
-                    height="95"
+                    src="/assets/images/index/process/process1.png"
+                    alt="Audit"
+                    width="94"
+                    height="94"
                     class="mb-3 d-inline-block"
                   />
-                  <h5 class="fw-medium mb-3">
-                    Schedule a <br />
-                    Strategy Call
-                  </h5>
-                  <p class="hard-gray">1:1 session with a senior strategist.</p>
+                  <h3 class="fw-semibold mb-3">Run Free <br />Audit</h3>
+                  <p class="p-small">
+                    Instant SEO, performance<span class="d-none d-md-inline"
+                      ><br /></span
+                    >& sustainability insights.
+                  </p>
                 </div>
+                <!-- Arrow after Step 1 -->
+                <img
+                  src="/assets/images/index/arrow/arrow1.svg"
+                  alt="Arrow"
+                  class="process-arrow d-none d-lg-block"
+                />
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="process-step h-100">
-                  <div class="process-number">3</div>
-                  <div class="mx-auto">
-                    <img
-                      src="/images/process/process3.png"
-                      alt="Build & Implement"
-                      width="95"
-                      height="95"
-                      class="mb-3 d-inline-block"
-                    />
-                  </div>
 
-                  <h5 class="fw-medium mb-3">Build & <br />Implement</h5>
-                  <p class="hard-gray">Custom roadmap with full execution.</p>
+              <!-- Step 2 -->
+              <div class="col-lg-3 col-md-6 position-relative">
+                <div class="text-center position-relative py-4 px-3 h-100">
+                  <div class="process-number">2</div>
+                  <img
+                    src="/assets/images/index/process/process2.png"
+                    alt="Strategy Call"
+                    width="94"
+                    height="94"
+                    class="mb-3 d-inline-block"
+                  />
+                  <h3 class="fw-semibold mb-3">
+                    Schedule a <br />Strategy Call
+                  </h3>
+                  <p class="p-small">
+                    1:1 session with a senior
+                    <span class="d-none d-md-inline"><br /></span>strategist.
+                  </p>
                 </div>
+                <!-- Arrow after Step 2 -->
+                <img
+                  src="/assets/images/index/arrow/arrow2.svg"
+                  alt="Arrow"
+                  class="process-arrow d-none d-lg-block"
+                />
               </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="process-step h-100">
+
+              <!-- Step 3 -->
+              <div class="col-lg-3 col-md-6 position-relative">
+                <div class="text-center position-relative py-4 px-3 h-100">
+                  <div class="process-number">3</div>
+                  <img
+                    src="/assets/images/index/process/process3.png"
+                    alt="Build & Implement"
+                    width="94"
+                    height="94"
+                    class="mb-3 d-inline-block"
+                  />
+                  <h3 class="fw-semibold mb-3">Build & <br />Implement</h3>
+                  <p class="p-small">
+                    Custom roadmap with full
+                    <span class="d-none d-md-inline"><br /></span>execution.
+                  </p>
+                </div>
+                <!-- Arrow after Step 3 -->
+                <img
+                  src="/assets/images/index/arrow/arrow3.svg"
+                  alt="Arrow"
+                  class="process-arrow d-none d-lg-block"
+                />
+              </div>
+
+              <!-- Step 4 -->
+              <div class="col-lg-3 col-md-6 position-relative">
+                <div class="text-center position-relative py-4 px-3 h-100">
                   <div class="process-number">4</div>
                   <img
-                    src="/images/process4.svg"
+                    src="/assets/images/index/process/process4.svg"
                     alt="Track & Scale"
-                    width="95"
-                    height="95"
+                    width="94"
+                    height="94"
                     class="mb-3 d-inline-block"
                   />
                   <h5 class="fw-medium mb-3">Track, Improve, <br />Scale</h5>
-                  <p class="hard-gray">
-                    Transparent analytics and growth loops.
+                  <p class="p-small">
+                    Transparent analytics and
+                    <span class="d-none d-md-inline"><br /></span>growth loops.
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="text-center mt-4">
-              <button class="btn-large fw-medium rounded-3">
+              <button class="btn btn-large rounded-3">
                 Book My Strategy Call
               </button>
             </div>
@@ -472,131 +485,128 @@
       </div>
     </section>
 
-    <!-- Trusted By Section -->
-    <section class="mt-6 mb-4">
-      <div class="container">
-        <h2 class="text-center mb-5">Trusted By</h2>
+    <section class="trusted-by-section pt-6">
+      <div class="">
+        <h2 class="text-center pb-6">Trusted By</h2>
 
-        <!-- First Row of Logos -->
-        <div class="row justify-content-center g-4 mb-4">
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_fashionTV.png"
-              alt="Fashion TV"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_Nissin.png"
-              alt="Nissin"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_city-of-dreams.png"
-              alt="City of Dreams"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_DP-world.png"
-              alt="DP World"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_KPMG.png"
-              alt="KPMG"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_THP-Group.png"
-              alt="THP Group"
-              class="img-fluid client-logo"
-            />
-          </div>
-        </div>
-
-        <!-- Second Row of Logos -->
-        <div class="row justify-content-center g-4">
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_Pacific-Prime.png"
-              alt="Pacific Prime"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_Beconcept.png"
-              alt="BoConcept"
-              class="img-fluid client-logo"
-            />
-          </div>
-          <div
-            class="col-6 col-md-2 d-flex align-items-center justify-content-center"
-          >
-            <img
-              src="/images/trusted-brands/logo_YesStyle.png"
-              alt="YesStyle"
-              class="img-fluid client-logo"
-            />
+        <!-- Swiper -->
+        <div class="swiper trusted-swiper">
+          <div class="swiper-wrapper">
+            <!-- Each logo as a swiper-slide -->
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_fashionTV.png"
+                alt="Fashion TV"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_Nissin.png"
+                alt="Nissin"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_city-of-dreams.png"
+                alt="City of Dreams"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_DP-world.png"
+                alt="DP World"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_KPMG.png"
+                alt="KPMG"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_THP-Group.png"
+                alt="THP Group"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_Pacific-Prime.png"
+                alt="Pacific Prime"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_Beconcept.png"
+                alt="BoConcept"
+                class="img-fluid"
+              />
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/images/index/trusted-brands/logo_YesStyle.png"
+                alt="YesStyle"
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section pt-6 pb-6">
+    <section class="newsletter-section pt-7 pb-8">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
-            <div class="text-center py-5 px-2 bg-orange text-white rounded-3">
+            <div class="text-center py-7 px-3 text-white rounded bg-orange">
               <!-- Text block -->
               <div class="mb-4">
-                <h2 class="mb-2">Get monthly insights on</h2>
-                <p class="mb-0">SEO, AI, and green marketing.</p>
+                <h2 class="mb-3">Get monthly insights on</h2>
+                <p class="fw-medium">SEO, AI, and green marketing.</p>
               </div>
 
               <!-- Form block -->
-              <div class="row justify-content-center">
-                <div class="col-md-8">
-                  <div class="d-flex align-items-center gap-3">
-                    <input
-                      type="email"
-                      class="form-control form-control-lg placeholder-grayish"
-                      placeholder="you@example.com"
-                      aria-label="Email address"
-                    />
-                    <button
-                      class="btn btn-light btn-lg px-5 rounded-5"
-                      type="button"
-                    >
-                      Submit
-                    </button>
-                  </div>
+              <div class="row justify-content-center g-2 col-md-8 m-auto">
+                <div class="col-12 col-md-8">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    placeholder="you@example.com"
+                    aria-label="Email address"
+                  />
+                </div>
+                <div class="col-6 col-md-auto">
+                  <button
+                    class="btn btn-light btn-lg w-100 rounded-5 px-6"
+                    type="button"
+                  >
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>
@@ -605,17 +615,123 @@
       </div>
     </section>
 
-    <div id="footer"></div>
+    <footer class="pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Description -->
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <a class="navbar-brand" href="/index.html"
+              ><img src="/assets/images/logo.svg" alt="Company Logo"
+            /></a>
+
+            <p class="text-secondary pt-4 p-small" style="text-align: justify">
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex.
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-2 offset-lg-3 col-md-6 mb-4 mb-md-0">
+            <h6 class="fw-bold mb-3">Useful Links</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none p-small"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none p-small"
+                  >Blog</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none p-small"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none p-small"
+                  >Tools</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-2 col-md-6 mb-lg-4 mb-md-0">
+            <h6 class="fw-bold mb-3">Services</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >SEO Audit</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Ecommerce SEO</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >International SEO</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Data Analysis</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Data Architecture</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="my-lg-4 hr-footer" />
+
+        <!-- Bottom Row -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-3 mb-lg-0 text-secondary copyright-text">
+              &copy; 2025 Concinnity Limited.
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-md-end gap-3">
+            <a href="#" class="text-secondary fs-5"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="text-secondary fs-5"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" class="text-secondary fs-5"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="#" class="text-secondary fs-5"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-      includeHTML("header", "header.html");
-      includeHTML("footer", "footer.html");
+      includeHTML("header", "/partials/header.html");
     </script>
   </body>
 </html>

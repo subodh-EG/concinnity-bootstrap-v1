@@ -1,0 +1,537 @@
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --main-orange: #ff7e00;
+  --soft-gray: #f0f2f1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.h3-large {
+  font-size: 32px;
+  font-weight: 600;
+}
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.h3-thick {
+  font-weight: 700;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.p-thick {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.p-small {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.p-smallest {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Mobile-first spacing utilities */
+.py-5 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.px-5 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.pt-5 {
+  padding-top: 1rem !important;
+}
+.pb-5 {
+  padding-bottom: 1rem !important;
+}
+.mb-5 {
+  margin-bottom: 1rem !important;
+}
+.mt-5 {
+  margin-top: 1rem !important;
+}
+.my-5 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.py-6 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.px-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+.pt-6 {
+  padding-top: 1.5rem !important;
+}
+.pb-6 {
+  padding-bottom: 1.5rem !important;
+}
+.my-6 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.py-7 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.pt-7 {
+  padding-top: 2rem !important;
+}
+.pb-7 {
+  padding-bottom: 2rem !important;
+}
+.mb-7 {
+  margin-bottom: 2rem !important;
+}
+.mt-7 {
+  margin-top: 2rem !important;
+}
+.my-7 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.py-8 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.pb-8 {
+  padding-bottom: 3rem !important;
+}
+.pt-8 {
+  padding-top: 3rem !important;
+}
+
+@media (min-width: 768px) {
+  .py-5 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .px-5 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+  .pt-5 {
+    padding-top: 2.5rem !important;
+  }
+  .pb-5 {
+    padding-bottom: 2.5rem !important;
+  }
+  .mb-5 {
+    margin-bottom: 2.5rem !important;
+  }
+  .mt-5 {
+    margin-top: 2.5rem !important;
+  }
+  .my-5 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+  .py-6 {
+    padding-top: 3.75rem !important;
+    padding-bottom: 3.75rem !important;
+  }
+  .px-6 {
+    padding-left: 3.75rem !important;
+    padding-right: 3.75rem !important;
+  }
+  .pt-6 {
+    padding-top: 3.75rem !important;
+  }
+  .pb-6 {
+    padding-bottom: 3.75rem !important;
+  }
+  .my-6 {
+    margin-top: 3.75rem !important;
+    margin-bottom: 3.75rem !important;
+  }
+
+  .py-7 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  .pt-7 {
+    padding-top: 4.5rem !important;
+  }
+
+  .pb-7 {
+    padding-bottom: 4.5rem !important;
+  }
+  .mb-7 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mt-7 {
+    margin-top: 4.5rem !important;
+  }
+
+  .my-7 {
+    margin-top: 4.5rem !important;
+    margin-bottom: 4.5rem !important;
+  }
+
+  .py-8 {
+    padding-top: 9.375rem !important;
+    padding-bottom: 9.375rem !important;
+  }
+  .pb-8 {
+    padding-bottom: 9.375rem !important;
+  }
+  .pt-8 {
+    padding-top: 9.375rem !important;
+  }
+}
+
+.text-orange {
+  color: #ff7e00 !important;
+}
+
+.border-orange {
+  border-color: #ff7e00 !important;
+  border-radius: 10px;
+}
+
+.hard-grey {
+  color: #595959;
+}
+.bg-orange {
+  background-color: #ff7e00;
+}
+
+.btn-large {
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-right: 60px;
+  color: black;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  border-width: 2px;
+  border: 2px solid var(--main-orange);
+  background-color: white;
+  align-self: center;
+}
+.btn-large-solid {
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-right: 60px;
+  color: white;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  border-width: 2px;
+  background-color: var(--main-orange);
+}
+.btn-large-solid:hover {
+  background-color: transparent;
+  color: var(--main-orange);
+  border-color: var(--main-orange);
+}
+
+.btn-secondary {
+  border-radius: 30px;
+  padding-top: 8px;
+  padding-right: 35px;
+  padding-bottom: 8px;
+  padding-left: 35px;
+  border-width: 1px;
+  border: 1px solid var(--main-orange);
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn-tertiary {
+  border-radius: 50px;
+  border-width: 0.5px;
+  border: 0.5px solid var(--main-orange);
+  padding-top: 3px;
+  padding-right: 30px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  background-color: #f9f2ec;
+}
+
+.btn-readmore {
+  border-radius: 5px;
+  border-width: 0.5px;
+  border: 0.5px solid var(--main-orange);
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  background-color: #f9f2ec;
+}
+
+.btn-secondary:hover,
+.btn-tertiary:hover,
+.btn-large:hover,
+.btn-readmore:hover {
+  background-color: var(--main-orange); /* optional: highlight */
+  color: white; /* optional: invert text */
+  border-color: var(--main-orange);
+}
+
+/* Header and Footer*/
+
+
+.copyright-text {
+  font-size: 15px;
+}
+
+.hr-footer {
+  border-bottom: 1.5px solid rgba(23, 23, 23, 0.08);
+}
+
+/* index.html  */
+.process-number {
+  position: absolute;
+  top: 0%;
+  left: 34%;
+  transform: translateX(-50%);
+  width: 27px;
+  height: 27px;
+  background-color: gray;
+  color: #000;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.success-numbers {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.process-arrow {
+  position: absolute;
+  top: 25%;
+  right: -65px;
+  transform: translateY(-50%);
+  width: 130px;
+  z-index: 1;
+}
+
+.success-metrics-section {
+  position: relative;
+  z-index: 1;
+  /* orange section stays on top */
+  background-color: #ff7e00;
+  /* ensure orange fully covers inside */
+  margin-top: 80px;
+  /* 👈 add spacing from top */
+}
+
+.success-metrics-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  height: 120px;
+  background: url("/assets/images/index/suceessWave-home.svg") no-repeat right
+    top;
+  background-size: cover;
+  z-index: -99;
+}
+
+.newsletter-section {
+  background-image: url("/assets/images/index/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center -2px; /* Moves image 60px down from the top */
+  background-size: cover;
+  margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .newsletter-section {
+    margin-top: 32px; /
+  }
+}
+
+/* Blog Archive Page Styling */
+.thick-arrow {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+/* e-commerce-seo.html Styling */
+@media (min-width: 992px) {
+  /* lg and up */
+  .custom-padding-lg {
+    padding: 50px 8px 50px 84px;
+  }
+}
+
+/* Ensure nested dropend menus open to the right on desktop */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    position: absolute;
+  }
+  .navbar .dropend > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0.125rem;
+  }
+  /* If a submenu uses dropdown-menu-end, force right-side for dropend */
+  .navbar .dropend > .dropdown-menu.dropdown-menu-end {
+    left: 100% !important;
+    right: auto !important;
+  }
+}
+
+/* --- Dropdown hover color overrides --- */
+/* Use brand orange background for hovered/active dropdown items */
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item.active,
+.navbar .dropdown-menu .dropdown-item.dropdown-toggle:hover,
+.navbar .dropdown-menu .dropdown-item.dropdown-toggle:focus {
+  background-color: var(--main-orange) !important;
+  color: #fff !important;
+}
+
+/* Optional: top-level nav-link hover color tweak (non-menu) */
+.navbar .nav-link:hover {
+  color: var(--main-orange);
+}
+
+
+/* Swiper Syting */
+.navbar .dropdown-menu .dropdown-item {
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.swiper-slide {
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+.swiper.trusted-swiper {
+  min-height: 100px; /* just enough to fit tallest logo */
+}
