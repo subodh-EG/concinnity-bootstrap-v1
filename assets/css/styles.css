@@ -1,4 +1,3 @@
-
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -316,6 +315,19 @@ p {
 .bg-orange {
   background-color: #ff7e00;
 }
+.bg-soft-gray {
+  background-color: #f0f2f1;
+}
+.btn-outline-orange {
+  border: 1px solid var(--main-orange);
+  color: white;
+  border-radius: 5px;
+}
+.btn-outline-orange:hover {
+  background-color: var(--main-orange);
+  color: white;
+  border-color: var(--main-orange);
+}
 
 .btn-large {
   border-radius: 30px;
@@ -341,7 +353,7 @@ p {
 }
 .btn-large-solid:hover {
   background-color: transparent;
-  color: var(--main-orange);
+  color: black;
   border-color: var(--main-orange);
 }
 
@@ -391,7 +403,6 @@ p {
 }
 
 /* Header and Footer*/
-
 
 .copyright-text {
   font-size: 15px;
@@ -469,7 +480,7 @@ p {
 
 @media (max-width: 767px) {
   .newsletter-section {
-    margin-top: 32px; /
+    margin-top: 32px;
   }
 }
 
@@ -504,6 +515,18 @@ p {
   }
 }
 
+/* SEO Audit */
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.25); /* faint grey */
+  opacity: 1; /* override browser default */
+}
+
+/* Tech Data-Architecture and Other Sections */
+.service-pill:hover {
+  border-color: var(--main-orange);
+  box-shadow: inset 0 0 0 1px var(--main-orange);
+}
+
 /* --- Dropdown hover color overrides --- */
 /* Use brand orange background for hovered/active dropdown items */
 .navbar .dropdown-menu .dropdown-item:hover,
@@ -520,7 +543,6 @@ p {
   color: var(--main-orange);
 }
 
-
 /* Swiper Syting */
 .navbar .dropdown-menu .dropdown-item {
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
@@ -534,4 +556,46 @@ p {
 
 .swiper.trusted-swiper {
   min-height: 100px; /* just enough to fit tallest logo */
+}
+
+/* Organic Exposure */
+
+.organic-section-dark {
+  background-color: #171717;
+
+  color: white;
+}
+.organic-service-card {
+  background: #1e1e1e;
+  border: 1px solid #595959;
+  border-radius: 10px;
+  height: 404px;
+  position: relative;
+  overflow: hidden;
+}
+
+.organic-service-number {
+  position: absolute;
+  top: 0;
+  font-size: 203px;
+  font-weight: bold;
+  opacity: 0.1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(30, 30, 30, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  left: 45px;
+}
+
+.organic-service-card:nth-child(2) .organic-service-number {
+  left: 29px;
+}
+
+.organic-service-card:nth-child(3) .organic-service-number {
+  left: 30px;
 }
