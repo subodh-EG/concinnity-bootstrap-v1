@@ -312,6 +312,9 @@ p {
 .hard-grey {
   color: #595959;
 }
+.soft-grey {
+  color: #f0f2f1;
+}
 .bg-orange {
   background-color: #ff7e00;
 }
@@ -503,6 +506,14 @@ p {
   background-color: #f5f5f5 !important; /* Light gray */
   color: #171717 !important; /* Optional: dark text for contrast */
   text-decoration: none;
+}
+
+.aside-small-heading {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 /* e-commerce-seo.html Styling */
