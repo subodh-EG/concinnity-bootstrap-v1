@@ -419,6 +419,24 @@ p {
   font-size: 15px;
 }
 
+/* Social icon brand hover colors in footer */
+footer a.text-secondary:hover .bi-facebook,
+footer a.text-secondary:focus .bi-facebook {
+  color: #1877f3 !important;
+}
+footer a.text-secondary:hover .bi-twitter-x,
+footer a.text-secondary:focus .bi-twitter-x {
+  color: #000 !important;
+}
+footer a.text-secondary:hover .bi-linkedin,
+footer a.text-secondary:focus .bi-linkedin {
+  color: #0a66c2 !important;
+}
+footer a.text-secondary:hover .bi-instagram,
+footer a.text-secondary:focus .bi-instagram {
+  color: #e4405f !important;
+}
+
 .hr-footer {
   border-bottom: 1.5px solid rgba(23, 23, 23, 0.08);
 }
