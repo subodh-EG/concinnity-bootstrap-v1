@@ -126,6 +126,9 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: 1.125rem;
+}
+
+.line-height {
   line-height: 22px;
 }
 
@@ -618,6 +621,72 @@ footer a.text-secondary:focus .bi-instagram {
 .service-pill:hover {
   border-color: var(--main-orange);
   box-shadow: inset 0 0 0 1px var(--main-orange);
+}
+
+/* Counter List */
+.counter-list {
+  counter-reset: step;
+}
+
+.counter-list li {
+  counter-increment: step;
+}
+
+.counter {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 33px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fd7e14; /* Bootstrap orange */
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+
+.counter::before {
+  content: counter(step);
+}
+
+.input-search {
+  border: 1px var(--soft-gray) solid;
+  border-radius: 22.5px;
+}
+
+/* Plain Numbered List */
+.numbered-list {
+  counter-reset: step;
+}
+
+.numbered-list li {
+  counter-increment: step;
+  align-items: flex-start; /* align number with top line of text */
+  gap: 0.5rem; /* space between number and text */
+  padding-right: 1rem; /* add breathing room on right side */
+}
+
+.numbered-list .num::before {
+  content: counter(step) ".";
+  font-weight: 600;
+  color: var(--main-orange);
+}
+
+.numbered-list .num {
+  min-width: 1.25rem; /* keeps consistent gap */
+  text-align: right;
+}
+
+.numbered-list li {
+  margin-bottom: 0.75rem;
+}
+
+.numbered-list li p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 /* --- Dropdown hover color overrides --- */
