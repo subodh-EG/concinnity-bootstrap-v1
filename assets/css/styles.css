@@ -712,7 +712,7 @@ footer a.text-secondary:focus .bi-instagram {
 /* Minimal hover; brand color for active/keyboard focus */
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item.dropdown-toggle:hover {
-  background-color: rgba(23, 23, 23, 0.04) !important;
+  background-color: var(--main-orange) !important;
   color: #171717 !important;
 }
 .navbar .dropdown-menu .dropdown-item:focus,
@@ -726,6 +726,17 @@ footer a.text-secondary:focus .bi-instagram {
 /* Optional: top-level nav-link hover color tweak (non-menu) */
 .navbar .nav-link:hover {
   color: var(--main-orange);
+}
+
+.dropdown-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-flex::after {
+  margin-left: 0.5rem !important;
+  margin-right: 0 !important;
 }
 
 /* Swiper Syting */
