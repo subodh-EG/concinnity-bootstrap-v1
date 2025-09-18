@@ -579,6 +579,19 @@ footer a.text-secondary:focus .bi-instagram {
   }
 }
 
+/* Positoning Stars at Hero Section */
+.star-img1 {
+  top: 50%;
+  left: 0%;
+  width: 42px;
+}
+
+.star-img2 {
+  top: 10%;
+  right: -50%;
+  width: 32px;
+}
+
 /* Blog Archive Page Styling */
 .thick-arrow {
   font-weight: bolder;
