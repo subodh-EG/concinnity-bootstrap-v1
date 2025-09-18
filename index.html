@@ -35,31 +35,45 @@
   <body>
     <div id="header"></div>
 
-    <section class="hero-section gradient-bg py-5">
+    <section class="hero-section gradient-bg py-5 position-relative">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div
-            class="col-lg-8 d-flex flex-column align-items-center text-center gap-3 gap-lg-4 mb-4 mb-lg-0"
+            class="col-lg-10 d-flex flex-column align-items-center text-center gap-3 gap-lg-4 mb-4 mb-lg-0 position-relative"
           >
-            <h1>
-              Is Your Website <br />
-              <span class="text-orange">Holding</span> You Back?
+            <h1 class="h1-hero">
+              <span class="text-lg-nowrap">
+                Is Your Website
+                <span class="text-white bg-orange px-2">Holding</span>
+              </span>
+              <span class="d-block">You Back?</span>
             </h1>
             <p>
               Discover what’s slowing you down with our free AI-powered
               audit.<br />
               SEO, performance, carbon load, and more — in under 60 seconds.
             </p>
-            <button class="btn btn-large">Run My Free Audit</button>
-            <p class="text-orange p-smallest">
+
+            <!-- CTA -->
+            <button class="btn btn-large fw-bold">Run My Free Audit</button>
+            <p class="text-orange p-smallest mb-0">
               No sign-up. No jargon. Just insights.
             </p>
+
+            <!-- Arrow (floating, not taking space) -->
+            <img
+              src="/assets/images/index/down-arrow.png"
+              alt="Arrow"
+              class="arrow-img"
+            />
           </div>
         </div>
+
+        <!-- Dashboard image -->
         <div class="row justify-content-center align-items-center pt-5">
-          <div class="col-lg-10 d-flex justify-content-center">
+          <div class="col-lg-12 d-flex justify-content-center">
             <img
-              src="assets/images/hero_stats.png"
+              src="assets/images/index/new-hero.png"
               alt="Audit Dashboard"
               class="img-fluid"
             />

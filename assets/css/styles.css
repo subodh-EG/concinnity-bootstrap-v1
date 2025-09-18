@@ -89,6 +89,11 @@ h1 {
   letter-spacing: 0;
 }
 
+.h1-hero {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
 h2 {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
@@ -447,6 +452,24 @@ p {
   background-color: var(--main-orange); /* optional: highlight */
   color: white; /* optional: invert text */
   border-color: var(--main-orange);
+}
+
+/* Index.html Different Sections */
+.arrow-img {
+  position: absolute;
+  top: 100%; /* start below the p */
+  left: 50%;
+  transform: translate(-50%, 20px); /* ⬅ push it down further */
+  max-height: 120px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+  .arrow-img {
+    max-height: 70px;
+    transform: translate(-50%, 10px); /* smaller push on mobile */
+  }
 }
 
 /* Header and Footer*/
