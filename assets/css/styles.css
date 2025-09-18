@@ -385,6 +385,20 @@ p {
   border-color: var(--main-orange);
 }
 
+/* px seems higher on main-hero button */
+.btn-hero {
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-right: 80px;
+  color: black;
+  padding-bottom: 15px;
+  padding-left: 80px;
+  border-width: 2px;
+  border: 2px solid var(--main-orange);
+  background-color: white;
+  align-self: center;
+}
+
 .btn-large {
   border-radius: 30px;
   padding-top: 15px;
@@ -563,6 +577,20 @@ footer a.text-secondary:focus .bi-instagram {
     top;
   background-size: cover;
   z-index: -99;
+}
+
+/* Vertical Borders between Columns */
+.success-metrics-section .col-lg-4:not(:last-child) {
+  position: relative;
+}
+.success-metrics-section .col-lg-4:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 15%; /* adjust vertical padding */
+  right: 0;
+  height: 70%; /* control line length */
+  width: 0.5px;
+  background: rgba(255, 255, 255, 0.414); /* semi-transparent white */
 }
 
 .newsletter-section {
