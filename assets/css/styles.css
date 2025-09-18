@@ -964,3 +964,51 @@ footer a.text-secondary:focus .bi-instagram {
   color: white;
   background-color: var(--main-orange);
 }
+
+.the-approach .overlap-img {
+  position: absolute;
+  top: 70%; /* desktop default */
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  z-index: 1;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .the-approach .overlap-img {
+    top: 72%; /* move slightly lower */
+    left: 50%; /* center more */
+    width: 220px; /* shrink a bit */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .the-approach .overlap-img {
+    top: 75%; /* more breathing space */
+    left: 50%; /* fully centered */
+    width: 180px; /* smaller */
+  }
+}
+
+/* Extra Small (phones) */
+@media (max-width: 480px) {
+  .the-approach .overlap-img {
+    top: 78%; /* a bit lower again */
+    width: 150px; /* even smaller */
+  }
+}
+
+.business-audit ul li {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  color: var(--hard-gray);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.text-orange-border {
+  border-bottom-color: var(--main-orange) !important;
+}
