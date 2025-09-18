@@ -301,6 +301,10 @@ p {
     padding-left: 4.5rem !important;
     padding-right: 4.5rem !important;
   }
+  .px-8 {
+    padding-left: 5.25rem !important;
+    padding-right: 5.25rem !important;
+  }
 
   .py-7 {
     padding-top: 4.5rem !important;
@@ -361,6 +365,9 @@ p {
 }
 .bg-soft-gray {
   background-color: #f0f2f1;
+}
+.bg-black-2 {
+  background-color: #171717;
 }
 
 /* Background gradients for Differnt Pages */
@@ -949,4 +956,11 @@ footer a.text-secondary:focus .bi-instagram {
 
 .organic-service-card:nth-child(3) .organic-service-number {
   left: 30px;
+}
+
+/* Digital Strategy Page */
+.business-auditing .cta:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--main-orange);
 }
