@@ -357,6 +357,11 @@ p {
 .bg-soft-gray {
   background-color: #f0f2f1;
 }
+
+/* Background gradients for Differnt Pages */
+
+/* index.html */
+
 .btn-outline-orange {
   border: 1px solid var(--main-orange);
   color: white;
