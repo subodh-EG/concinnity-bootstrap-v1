@@ -593,6 +593,11 @@ footer a.text-secondary:focus .bi-instagram {
   background: rgba(255, 255, 255, 0.414); /* semi-transparent white */
 }
 
+.services-section .custom-shadow {
+  box-shadow: 0px 3px 15px rgba(58, 58, 58, 0.4) !important;
+  border: 1px solid var(--soft-gray) !important;
+}
+
 .newsletter-section {
   background-image: url("/assets/images/index/Vector.svg");
   background-repeat: no-repeat;
