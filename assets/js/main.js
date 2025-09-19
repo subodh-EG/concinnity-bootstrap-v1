@@ -202,12 +202,18 @@ document.addEventListener("include:loaded", (e) => {
 window.addEventListener("resize", () => initNavbarDropdownHover());
 
 // <!-- Swiper Init Script -->
-var swiper = new Swiper(".trusted-swiper", {
-  slidesPerView: 2, // mobile default
+
+const slides = document.querySelectorAll(
+  ".trusted-swiper .swiper-slide"
+).length;
+const maxSlidesPerView = 6; // matches your largest breakpoint
+
+const swiper = new Swiper(".trusted-swiper", {
+  slidesPerView: 3,
   spaceBetween: 20,
-  loop: true,
+  loop: slides > maxSlidesPerView, // enable loop only if enough slides
   autoplay: {
-    delay: 0, // continuous scroll
+    delay: 0,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
@@ -215,19 +221,11 @@ var swiper = new Swiper(".trusted-swiper", {
     enabled: true,
     momentum: false,
   },
-  speed: 16000, // control scroll speed
+  speed: 16000,
   breakpoints: {
-    576: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-    },
-    992: {
-      slidesPerView: 5,
-    },
-    1200: {
-      slidesPerView: 6,
-    },
+    576: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    992: { slidesPerView: 5 },
+    1200: { slidesPerView: 6 },
   },
 });

@@ -956,6 +956,13 @@ footer a.text-secondary:focus .bi-instagram {
   min-height: 100px; /* just enough to fit tallest logo */
 }
 
+.trusted-swiper .swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100px; /* Set consistent height */
+}
+
 /* Organic Exposure */
 
 .organic-section-dark {
