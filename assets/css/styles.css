@@ -492,6 +492,10 @@ p {
 }
 
 /* Header and Footer*/
+header {
+  position: relative;
+  z-index: 1030; /* Higher than default elements, ensures dropdowns are on top */
+}
 
 .copyright-text {
   font-size: 15px;
