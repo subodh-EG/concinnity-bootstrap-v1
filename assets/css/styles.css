@@ -370,8 +370,6 @@ p {
   background-color: #171717;
 }
 
-/* Background gradients for Differnt Pages */
-
 /* index.html */
 
 .btn-outline-orange {
@@ -1057,4 +1055,123 @@ footer a.text-secondary:focus .bi-instagram {
 
 .text-orange-border {
   border-bottom-color: var(--main-orange) !important;
+}
+
+/* Background Grid and Gradient for Differnt Pages */
+
+/* Header and Hero Section All pages */
+
+/* Base grid settings */
+:root {
+  --grid-size: 1.75cm;
+  --grid-color: rgba(255, 126, 0, 0.025);
+  --gradient-color: rgba(255, 126, 0, 0.1);
+}
+
+/* Header pseudo-element */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+
+  background:
+    /* subtle shaded cells */ radial-gradient(
+      circle at var(--grid-size) var(--grid-size),
+      rgba(255, 126, 0, 0.08) 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at calc(var(--grid-size) * 2.5) calc(var(--grid-size) * 1.7),
+      rgba(255, 126, 0, 0.06) 15%,
+      transparent 16%
+    ),
+    /* vertical & horizontal grid lines */
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    /* top-right gradient highlight */
+      linear-gradient(to top right, white 70%, var(--gradient-color) 100%);
+
+  background-size: var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size), var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size), 100% 100%;
+  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat;
+  background-position: top left, top left, top left, top left, top right;
+}
+
+/* Contact-us pseudo-element */
+.grid-gradient-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* top half only */
+  pointer-events: none;
+  z-index: 0;
+
+  background:
+    /* subtle shaded cells aligned with header grid */ radial-gradient(
+      circle at var(--grid-size) var(--grid-size),
+      rgba(255, 126, 0, 0.08) 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at calc(var(--grid-size) * 2.5) calc(var(--grid-size) * 1.7),
+      rgba(255, 126, 0, 0.06) 15%,
+      transparent 16%
+    ),
+    /* vertical & horizontal grid lines */
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    /* top-right gradient highlight */
+      linear-gradient(to top right, white 70%, var(--gradient-color) 100%);
+
+  background-size: var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size), var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size), 100% 50%;
+  background-repeat: no-repeat, no-repeat, repeat, repeat, no-repeat;
+  background-position: top left, top left, top left, top left, top right;
+}
+
+/* Make sure content is above pseudo-elements */
+header > *,
+.grid-gradient-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* critical */
+  z-index: 0;
+  /* grid + gradient background here */
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* These are fixes for dropdowns in header */
+
+.dropdown-menu {
+  z-index: 1050 !important;
+}
+
+.hero-section,
+header {
+  overflow: visible; /* ensure dropdown can escape */
+}
+
+.navbar .dropdown-menu {
+  z-index: 1050; /* Bootstrap default for dropdowns */
 }
